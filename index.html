@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="ジャンルから学びたい本を見つける本棚">
+	<title>BOOKMARKET | 学びの本棚</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<a class="brand" href="#top" aria-label="BOOKMARKET ホーム"><span class="brand-mark">B</span><span>BOOKMARKET</span></a>
+		<nav class="main-nav" aria-label="メインナビゲーション">
+			<a class="active" href="#top">ジャンルから探す</a>
+		</nav>
+	</header>
+
+	<main id="top">
+		<section class="hero">
+			<div class="hero-copy">
+				<p class="eyebrow">YOUR NEXT READ</p>
+				<h1>今のあなたに、<br><em>効く一冊</em>を。</h1>
+				<p class="hero-text">興味のあるジャンルを選ぶだけで、<br>いま読まれている本に出会えます。</p>
+			</div>
+			<div class="hero-note" aria-hidden="true"><span>01</span><i></i><strong>curated<br>for you</strong></div>
+		</section>
+
+		<section class="explore-section" id="genres">
+			<div class="section-heading">
+				<div><p class="eyebrow">EXPLORE BY GENRE</p><h2>どんなことを<br>深めたい？</h2></div>
+				<p class="heading-note">幅広いテーマから、<br>次の学びを見つけよう。</p>
+			</div>
+			<div class="genre-grid" id="genreGrid"></div>
+		</section>
+
+		<section class="detail-section is-hidden" id="detailSection">
+			<button class="back-button" id="backButton" type="button">← ジャンル一覧に戻る</button>
+			<div class="detail-heading"><div><p class="eyebrow">DEEP DIVE</p><h2 id="detailTitle">IT・プログラミング</h2></div><p id="detailDescription"></p></div>
+			<div class="subgenre-grid" id="subgenreGrid"></div>
+		</section>
+
+		<section class="ranking-section is-hidden" id="ranking">
+			<div class="ranking-topline"><div><p class="eyebrow">BESTSELLERS ON AMAZON</p><h2 id="rankingTitle">Web開発</h2></div><span class="updated">更新：今日</span></div>
+			<div class="book-grid" id="bookGrid"></div>
+			<p class="source-note">※ オフライン用カタログです。商品名・価格・在庫はAmazon検索ページでご確認ください。</p>
+		</section>
+	</main>
+
+	<footer><span>BOOKMARKET</span><span>読むことは、未来の自分への投資。</span></footer>
+	<script src="hello.js" defer></script>
+</body>
+</html>
